@@ -1,0 +1,17 @@
+# Deployment
+deployment:
+  name: login-app
+  replicas: 2
+  label: login-app
+  container: login-con
+  image: afreen20/login-app
+  port: 80
+
+# Service
+service:
+  name: login-svc
+  type: NodePort
+  label: login-app
+  port: 80
+  nodeport: 30007
+
