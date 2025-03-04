@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: api1
-        image: afreen-20/node-api1 
+        image: afreen20/node-api1 
         ports:
         - containerPort: 3001
 ---
